@@ -46,7 +46,7 @@ Route::get('settings', function() {
 
 //    settings()->set('gender', 'Male');
 //    settings()->set('home_page', 'http://trinity.vn');
-//    return App\Models\User::first();
+   return App\Models\User::first();
 
 
 });
