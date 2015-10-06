@@ -10,10 +10,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin
     Route::get('dashboard', 'DashboardController@index');
     Route::get('pages', 'PagesController@index');
 
-    Route::get('{name?}', 'TrinityController@showView');
+    Route::get('{name?}', 'KidController@showView');
 
     Route::group(['prefix' => 'pages'], function () {
-        Route::get('{name?}', 'TrinityController@showView');
+        Route::get('{name?}', 'KidController@showView');
     });
 
 });
